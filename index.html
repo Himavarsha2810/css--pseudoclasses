@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: black;
+       }
+       .s1{
+        color: whitesmoke;
+        border: 5px solid;
+       }
+       h1{
+        border: 2px solid whitesmoke;
+        padding: 5px;
+        width: 350px;
+        margin: 10px auto;
+        box-shadow: 1px 2px 3px;
+       }
+       .d1{
+        border: 3px solid whitesmoke;
+        padding: 5px;
+        width: 130px;
+        margin: 250px auto;
+        background-color: purple;
+        /* margin-top: 250px; */
+       }
+       #translate:checked ~ .d1{
+           transform: translate(50px,50px);
+       }
+       #rotate:checked ~ .d1{
+           transform: rotate(50deg);
+       }
+       #skew:checked ~ .d1{
+          transform: skew(40deg);
+       }
+       #scale:checked ~ .d1{
+        transform: scale(3);
+       }
+       #skewY:checked ~ .d1{
+        transform: skewY(30deg);
+       }
+       #scaleY:checked ~ .d1{
+        transform: scaleY(3);
+       }
+       #translateY:checked ~ .d1{
+           transform: translateY(160px);
+       }
+       #rotateY:checked ~ .d1{
+         transform: rotateY(180deg);
+       }
+       #scaleX:checked ~ .d1{
+        transform: scaleX(4)
+       }
+       /* #matrix:checked ~ .d1{
+       transform: matrix(0.56,0.87,0,563,0.6);
+       } */
+    </style>
+</head>
+<body>
+    <section class="s1">
+        <h1 align="center">TRANSFORM  PROPERTIES</h1><br><br>
+            <input type="radio" id="translate" name="transform">translate<br>
+            <input type="radio" id="rotate" name="transform">rotate<br>
+            <input type="radio" id="skew" name="transform">skew<br>
+            <input type="radio" id="scale" name="transform">scale<br>
+            <input type="radio" id="skewY" name="transform">skewY<br>
+            <input type="radio" id="translateY" name="transform">translateY<br>
+            <input type="radio" id="scaleY" name="transform">scaleY<br>
+            <input type="radio" id="rotateY" name="transform">rotateY<br>
+            <input type="radio" id="scaleX" name="transform">scaleX<br>
+            <!-- <input type="radio" id="matrix" name="transform">matrix -->
+            <div class="d1">Hello everyone,myself D.Himavarsha from 27r batch -10000 coders</div>
+    </section>
+</body>
+</html>
